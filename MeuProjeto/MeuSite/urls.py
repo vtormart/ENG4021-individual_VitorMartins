@@ -24,6 +24,6 @@ app_name = 'MeuSite'
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', views.home, name='home'),
-    path('index', views.curriculo_spiff, name='index'),
-    path('meu-curriculo', views.curriculo_spiff_v2, name='meu-curriculo'),
+    path('index', views.index, name='index'),
+    path('meu-curriculo', views.meu_curriculo, name='meu-curriculo'),
 ]

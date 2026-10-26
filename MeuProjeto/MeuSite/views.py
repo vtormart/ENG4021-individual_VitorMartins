@@ -1,22 +1,14 @@
 from django.shortcuts import render
 
 def home(request):
-    '''
-    View function for home page of site.
-    Renders the home.html template.
-    '''
+    """Página inicial do site: mostra os links para os currículos."""
     return render(request, 'home.html')
-
-
-from django.shortcuts import render
-
-
-
+    
 def index(request):
-   
+    """Renderiza o template index.html."""
     return render(request, 'index.html')
 
 
-def meu-curriculo(request):
-    
+def meu_curriculo(request):
+    """Renderiza o template meu-curriculo.html."""
     return render(request, 'meu-curriculo.html')

@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,7 +17,7 @@
             <li><a href= "#educacao">Educação</a></li>
             <li><a href="#idiomas">Idiomas</a></li>
             <li>Versão 2</li>
-            <li><a href="meu-curriculo.html">Meu currículo</a></li>
+            <li><a href="{% url 'meu-curriculo' %}">Meu currículo</a></li>
         </ul>
     </nav>
 <main>
@@ -30,7 +31,7 @@
         <section id="resumo">
         <h2>Resumo</h2>
 
-            <img src="{% static='img/spiff.jpg' %}" alt='Foto do astronauta Spiff em ação'>
+            <img src="{% static 'img/spiff.jpg' %}" alt='Foto do astronauta Spiff em ação'>
             <p>Um intrépido e imaginativo astronauta com vasta experiência em exploração espacial solo e em missões críticas a planetas inóspitos. Proficiente em pilotagem de naves espaciais de construção própria, análise de fenômenos alienígenas e resolução criativa de problemas em ambientes extraterrestres. Possui um histórico comprovado de descobertas notáveis e encontros (nem sempre amigáveis) com formas de vida alienígenas diversas.</p>
 
             <h2>Experiência Profissional</h2>
@@ -42,10 +43,10 @@
                         Sobreviveu a condições ambientais extremas, incluindo tempestades de glitter cósmico e campos gravitacionais instáveis.
                         Documentou descobertas científicas inovadoras, incluindo a existência de "Smoggles" e a natureza da "Energia Zum-Zum".
                         Infiltrou em planetas hostis.
-                        Resgatou de missões espaciais perdidas.
+           
                         Descobriu de novos sistemas estelares.
                         Explorou e mapeou planetas inexplorados.
-                        Combateu contra hordas de alienígenas hostis.
+                        Combateu contra h             Resgatou de missões espaciais perdidas.ordas de alienígenas hostis.
                         Resgatou de civilizações ameaçadas por buracos negros.
                         Vice-campeão intergalático de cara-coroa.
     </section>
