@@ -18,6 +18,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from MTCars import views
+
+app_name = "MTCars"
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path('', views.home, name='home'),
+    path('lista/', views.lista, name='lista'),
+    path("busca/", views.searchf, name="busca"),
 ]
