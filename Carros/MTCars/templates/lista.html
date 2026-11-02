@@ -28,7 +28,7 @@
         <tbody>
             {% for carro in carros %}
                 <tr>
-                    <td><a href="{% url 'detalhes' carro.id %}">{{ carro.name }}</a></td> <!--  Essa linha causa erro. Apagando, roda, mas faltando informação -->
+                    <td><a href="{% url 'detalhes' carro.id %}">{{ carro.name }}</a></td> 
                     <td>{{ carro.mpg }}</td>
                     <td>{{ carro.cyl }}</td>
                     <td>{{ carro.disp }}</td>

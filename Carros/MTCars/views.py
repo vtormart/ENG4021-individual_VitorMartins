@@ -43,3 +43,13 @@ def searchf(request):
     # mas você pode usar outro template para mostrar uma página diferente.
     # Basta trocar o nome do arquivo HTML no parâmetro da função render a seguir.
     return render(request, 'busca.html', contexto)
+
+def detalhes(request, carro_id):
+    carro = MTCars.objects.get(id=carro_id)
+    # Ao criar uma entrada no dicionário contexto com o nome carro (string constante),
+    # você vai criar uma variável carro no template associado pela função render.
+    # Essa variável é um objeto carro, com todas as suas propriedades.
+    contexto = {
+        'carro': carro,
+    }
+    return render(request, 'detalhes.html', contexto)
